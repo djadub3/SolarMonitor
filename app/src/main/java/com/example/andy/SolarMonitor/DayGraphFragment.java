@@ -1,4 +1,4 @@
-package com.example.andy.bikemonitor;
+package com.example.andy.SolarMonitor;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
