@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.andy.bikemonitor" >
+    package="com.example.andy.SolarMonitor" >
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.andy.SolarMonitor.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,18 +22,18 @@
         </activity>
 
         <service
-            android:name=".Bluetoothservice"
+            android:name="com.example.andy.SolarMonitor.Bluetoothservice"
             android:enabled="true"
             android:exported="true" >
         </service>
 
         <activity
-            android:name=".DayGraph"
+            android:name="com.example.andy.SolarMonitor.DayGraph"
             android:label="@string/title_activity_day_graph"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.example.andy.SolarMonitor.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.andy.bikemonitor.MainActivity" />
+                android:value="com.example.andy.SolarMonitor.MainActivity" />
         </activity>
     </application>
 

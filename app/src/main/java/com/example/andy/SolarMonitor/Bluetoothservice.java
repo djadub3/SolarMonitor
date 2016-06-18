@@ -1,4 +1,4 @@
-package com.example.andy.bikemonitor;
+package com.example.andy.SolarMonitor;
 
 import android.app.Service;
 import android.bluetooth.BluetoothAdapter;
